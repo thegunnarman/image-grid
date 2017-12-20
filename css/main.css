@@ -27,24 +27,27 @@ img {
   float: left;
   width: 100%;
   margin: 0;
-  display: inline-block;
+  overflow: hidden;
+  display: block;
 }
 
 img:nth-child(even) {
   display: none;
 }
 
+
+
 img:nth-child(4n) {
   display: block;
 }
 
-
-
+img:nth-child(5n) {
+  display: none;
+}
 
 @media only screen and (min-width: 25em) {
 
   img {
-
     width: 50%;
     overflow: hidden;
     float: left;
@@ -54,7 +57,12 @@ img:nth-child(4n) {
     display: block;
     width: 100%;
   }
+
   img:nth-child(even) {
+    display: block;
+  }
+
+  img:nth-child(5n) {
     display: block;
   }
 
