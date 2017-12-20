@@ -35,8 +35,6 @@ img:nth-child(even) {
   display: none;
 }
 
-
-
 img:nth-child(4n) {
   display: block;
 }
@@ -65,8 +63,6 @@ img:nth-child(5n) {
   img:nth-child(5n) {
     display: block;
   }
-
-
 }
 
 @media only screen and (min-width: 38em) {
