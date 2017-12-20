@@ -27,46 +27,74 @@ img {
   float: left;
   width: 100%;
   margin: 0;
+  display: inline-block;
 }
 
 img:nth-child(even) {
   display: none;
 }
 
+img:nth-child(4n) {
+  display: block;
+}
+
+
+
+
 @media only screen and (min-width: 25em) {
 
   img {
 
-    width: 49%;
+    width: 50%;
     overflow: hidden;
+    float: left;
   }
 
-  img:nth-child(even) {
-    display: inline-block;
+  img:first-child {
+    display: block;
+    width: 100%;
   }
+  img:nth-child(even) {
+    display: block;
+  }
+
+
 }
 
 @media only screen and (min-width: 38em) {
 
   img {
 
-    width: 32%;
+    width: 33.3333%;
   }
 
   img:first-child {
-    display: none;
+
     overflow: hidden;
+    width: 100%;
+  }
+
+  img:nth-child(5n) {
+    display: none;
   }
 }
 
 @media only screen and (min-width: 60em) {
 
   img {
+    display: block;
 
-    width: 24%;
+    width: 33.3333%;
+    float: left;
+  }
+
+  img:nth-child(5n) {
+    display: block;
   }
 
   img:first-child {
 
+    overflow: hidden;
+    width: 66.6666%;
   }
 }
